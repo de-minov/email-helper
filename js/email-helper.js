@@ -43,12 +43,9 @@ class EmailHelper {
     const val = this.input.value;
     const match = val.match(this.reg);
     if(match) {
-      const find = this.domains.filter(val => val.startsWith(match[2]));
+      const find = this.domains.filter(val => val.startsWith(match[2].toLowerCase()));
       this.list.innerHTML = '';
-      if(find.length === 1 && find[0] === match[2]) {
-        this.listHide();
-        return false;
-      }
+      if(!find.length > 0 || find.length === 1 && find[0] === match[2]) return this.listHide();
       find.map(val => this.list.insertAdjacentHTML('beforeend', `<div>${val}</div>`));
       this.listShow();
     } else this.listHide();
