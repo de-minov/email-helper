@@ -36,7 +36,10 @@ class EmailHelper {
   #handler(e) {
     if(!e.target) return false;
     const val = e.target.value;
-    if(val || val.length > 0) this.check()
+    if(val || val.length > 0)
+      this.check();
+    else 
+      this.listHide();
   }
   
   check() {
