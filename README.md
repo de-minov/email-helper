@@ -1,5 +1,8 @@
 # Email Helper
-Displaying a list of popular email addresses.
+When you enter an email, after `@` the script will display options for popular mail service domains.
+The following addresses are presented: **Mail.ru**, **Yandex.ru**, **Rambler.ru**, **Google.com**, **iCloud.com** and **Outlook.com**.
+
+This is done so that there are fewer errors on the part of the user, because a common mistake is incorrect domain zones, for example `@gmail.ru `.
 
 ### Using
 Connecting CSS and JS files:
