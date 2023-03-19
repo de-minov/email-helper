@@ -6,7 +6,7 @@ Connecting CSS and JS files:
 
 ```HTML
 <link rel="stylesheet" href="/email-helper.min.css"/>
-<script src="/email-helper.min.js"></script> <!-- or ES5 - /email-helper-es5.min.js -->
+<script src="/email-helper-es6.min.js"></script> <!-- or ES5 - /email-helper-es5.min.js -->
 ```
 
 After use the construction:
